@@ -1,6 +1,6 @@
 # Data-Preprocessing
 
-one hot encoding and label encoding
+  # one hot encoding and label encoding
 
 🔹 1. Importing Required Libraries
 pandas is used for data manipulation and analysis.
@@ -50,6 +50,49 @@ Splits the dataset into training and testing sets using an 80-20 ratio.
 
  17. Viewing the Test Target Data
      Displays the target labels of the test set.
+
+     # Ordinal Encoding
+ 🔹 1. Import Required Library    
+ Imports the pandas library for data handling and analysis.
+
+ 🔹 2. Create Sample Dataset
+ Creates a dataset using a dictionary with columns:
+ CostmorID: Unique identifier.
+ Education_Level: Ordered educational qualifications.
+ Product_Quality: Quality ratings.
+ Satisfaction_Level: Customer satisfaction responses.
+ Converts this dictionary into a pandas DataFrame named df.
+
+ 🔹 3. View the Original Data
+Displays the raw, unencoded dataset.
+
+🔹 4. Define Order for Ordinal Columns
+Manually specifies the logical order of values for each column.
+Education_Level: from least to highest degree.
+Product_Quality: from worst to best.
+Satisfaction_Level: from least to most satisfied.
+
+🔹 5. Import OrdinalEncoder from scikit-learn
+Imports the OrdinalEncoder class from sklearn.preprocessing.
+
+🔹 6. Initialize the OrdinalEncoder with Defined Orders
+Initializes the encoder and provides the predefined order of categories for each feature.
+Ensures that encoding reflects the true ordinal relationships.
+
+🔹 7. Apply Ordinal Encoding
+Transforms the three ordinal columns into numeric format using the defined category order.
+Encoded values are assigned back to the same columns in the DataFrame.
+
+🔹 8. View the Encoded Data
+Displays the DataFrame with transformed numeric values for the ordinal features.
+
+
+
+
+
+
+
+
 
 
 
